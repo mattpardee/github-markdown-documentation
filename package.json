@@ -1,0 +1,24 @@
+{
+  "name": "github-markdown-documentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattpardee/github-markdown-documentation.git"
+  },
+  "keywords": [],
+  "author": "Matt Pardee <matt.pardee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattpardee/github-markdown-documentation/issues"
+  },
+  "homepage": "https://github.com/mattpardee/github-markdown-documentation#readme",
+  "dependencies": {
+    "github": "^9.2.0",
+    "highlight.js": "^9.10.0",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "striptags": "^3.0.1"
+  }
+}
