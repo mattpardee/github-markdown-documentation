@@ -29,14 +29,16 @@ module.exports = (options, cb) => {
     path: options.path,
   })
   .then((result) => {
+    const data = result.data;
     const markdown = new Markdown();
-    result.htmlContent = markdown.marked(
-      github.utils.convertBase64ContentToUtf8(result.content),
+
+    data.htmlContent = markdown.marked(
+      github.utils.convertBase64ContentToUtf8(data.content),
       { renderer: markdown.renderer }
     );
 
-    result.toc = markdown.toc;
-    cb(null, result);
+    data.toc = markdown.toc;
+    cb(null, data);
   })
   .catch(cb);
 };
